@@ -17,7 +17,7 @@ services:
       start_period: 30s
 
   backend:
-    image: gestion-projets-backend:latest
+    image: errokhnermine_5arctic8_gestionprojets-backend:latest
     build: ./backend
     container_name: gestion-projets-backend
     depends_on:
@@ -32,7 +32,7 @@ services:
     restart: on-failure
 
   frontend:
-    image: gestion-projets-frontend:latest
+    image: errokhnermine_5arctic8_gestionprojets-frontend:latest
     build: ./frontend
     container_name: gestion-projets-frontend
     depends_on:
