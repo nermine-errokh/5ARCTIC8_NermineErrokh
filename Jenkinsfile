@@ -45,12 +45,11 @@ pipeline {
                 dir('backend') { sh 'mvn package -DskipTests' }
             }
         }
-                    stage('Build Docker') {
+                stage('Build Docker') {
             steps {
                 sh 'docker build -t errokhnermine_5arctic8_gestionprojets-backend:latest ./backend'
                 sh 'docker build -t errokhnermine_5arctic8_gestionprojets-frontend:latest ./frontend'
             }
-        }
         }
 
         stage('Deploy (Compose)') {
