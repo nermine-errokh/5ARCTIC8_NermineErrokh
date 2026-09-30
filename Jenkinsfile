@@ -47,8 +47,8 @@ pipeline {
         }
                 stage('Build Docker') {
             steps {
-                sh 'docker build -t nomprenom_5ARCTIC8_gestionprojets-backend:latest ./backend'
-                sh 'docker build -t nomprenom_5ARCTIC8_gestionprojets-frontend:latest ./frontend'
+                sh 'docker build -t errokhnermine_5ARCTIC8_gestionprojets-backend:latest ./backend'
+                sh 'docker build -t errokhnermine_5ARCTIC8_gestionprojets-frontend:latest ./frontend'
             }
         }
 
