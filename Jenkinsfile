@@ -45,5 +45,19 @@ pipeline {
                 dir('backend') { sh 'mvn package -DskipTests' }
             }
         }
+                stage('Build Docker') {
+            steps {
+                sh 'docker build -t nomprenom_5ARCTIC8_gestionprojets-backend:latest ./backend'
+                sh 'docker build -t nomprenom_5ARCTIC8_gestionprojets-frontend:latest ./frontend'
+            }
+        }
+
+        stage('Deploy (Compose)') {
+            steps {
+                sh 'docker compose down || true'
+                sh 'docker compose up -d --build'
+                sh 'docker compose ps'
+            }
+        }
     }
 }
