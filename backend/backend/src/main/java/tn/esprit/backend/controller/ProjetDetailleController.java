@@ -3,7 +3,7 @@ package tn.esprit.backend.controller;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.backend.entity.ProjetDetaille;
-import tn.esprit.backend.service.IProjetDetailleService;
+import tn.esprit.backend.serviceTests.IProjetDetailleService;
 
 import java.util.List;
 

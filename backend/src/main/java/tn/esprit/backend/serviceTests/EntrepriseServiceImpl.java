@@ -1,10 +1,9 @@
-package tn.esprit.backend.service;
+package tn.esprit.backend.serviceTests;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import tn.esprit.backend.entity.Entreprise;
 import tn.esprit.backend.repository.EntrepriseRepository;
-import tn.esprit.backend.service.IEntrepriseService;
 
 import java.util.List;
 

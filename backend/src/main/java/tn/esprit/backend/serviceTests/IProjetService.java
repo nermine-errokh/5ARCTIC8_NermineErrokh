@@ -1,4 +1,4 @@
-package tn.esprit.backend.service;
+package tn.esprit.backend.serviceTests;
 
 import tn.esprit.backend.entity.Projet;
 

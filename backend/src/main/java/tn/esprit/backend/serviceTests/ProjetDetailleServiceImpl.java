@@ -1,4 +1,4 @@
-package tn.esprit.backend.service;
+package tn.esprit.backend.serviceTests;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -6,7 +6,6 @@ import tn.esprit.backend.entity.Projet;
 import tn.esprit.backend.entity.ProjetDetaille;
 import tn.esprit.backend.repository.ProjetDetailleRepository;
 import tn.esprit.backend.repository.ProjetRepository;
-import tn.esprit.backend.service.IProjetDetailleService;
 
 import java.util.List;
 
