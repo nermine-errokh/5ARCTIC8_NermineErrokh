@@ -15,6 +15,9 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 
     @Override
     public Entreprise addEntreprise(Entreprise entreprise) {
+        String s = null;
+        System.out.println(s.length());   // NullPointerException garanti
+        String password = "admin123";
         return entrepriseRepository.save(entreprise);
     }
 
@@ -36,9 +39,5 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
     @Override
     public List<Entreprise> getAllEntreprises() {
         return entrepriseRepository.findAll();
-    }
-    public int bugDemo() {
-        String s = null;
-        return s.length();   // S2259 : déréférencement de null
     }
 }
