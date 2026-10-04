@@ -37,8 +37,5 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
     public List<Entreprise> getAllEntreprises() {
         return entrepriseRepository.findAll();
     }
-    /*public int bugDemo() {
-        String s = null;
-        return s.length();   // S2259 : déréférencement de null
-    }*/
+
 }
