@@ -15,6 +15,9 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 
     @Override
     public Entreprise addEntreprise(Entreprise entreprise) {
+        String s = null;
+        System.out.println(s.length());   // NullPointerException garanti
+        String password = "admin123";
         return entrepriseRepository.save(entreprise);
     }
 
